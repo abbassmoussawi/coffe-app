@@ -2,13 +2,30 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
 
 /*header section*/
 
 .header {
-    display: flex;
     background-color: #43281c;
     color: #fbf2c0;
+}
+
+.logo-title-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    height: 25px;
+    position: relative;
+    top: 25px;
+    margin-right: 6px;
 }
 
 .main-title {
