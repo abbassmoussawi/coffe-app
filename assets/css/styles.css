@@ -13,6 +13,7 @@ body {
 .header {
     background-color: #43281c;
     color: #fbf2c0;
+    width: 100vw;
 }
 
 .logo-title-section {
@@ -31,4 +32,52 @@ body {
 .main-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
+}
+
+
+/* body section*/
+
+.body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item order-name" "item payment";
+    gap: 10px;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: #eee1d5;
+    border-radius: 5px;
+}
+
+.items {
+    grid-area: item;
+}
+
+.order-name {
+    grid-area: order-name;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.descrption {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #dd812a;
+}
+
+.order-specification {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-additions {
+    color: blue;
 }
